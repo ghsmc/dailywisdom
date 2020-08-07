@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link href=styles.css rel="stylesheet" type=text/css>
+    <title>Quote of the Day</title>
+</head>
+
+<body>
+    <h1 id="intro" class="center">Hello, We've Prepared Your Daily Wisdom.</h1>
+    <p id="quotation" class="center">Your Quote is coming...</p>
+    <p id="author" class="center">Author</p>
+
+    <script>
+
+        async function getQuote() {
+            let data = await fetch('https://api.quotable.io/random');
+            let quote = await data.json();
+            console.log(quote);
+            document.getElementById("quotation").innerText = quote.content;
+            document.getElementById("author").innerText = "- " + quote.author;
+        }
+
+        getQuote();
+
+    </script>
+</body>
+
+</html>
