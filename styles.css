@@ -14,9 +14,19 @@ body {
 
 .btn {
     border-radius: 1rem;
-    border-color: white;
-    background-color: rgba(255, 255, 255, 0);
-    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: none;
+    font-size: large;
+    background-color: white;
+    color: salmon;
+    border-color: salmon;
+    font-weight: bold;
+}
 
+.btn:hover {
+  cursor: pointer;
 }
 
