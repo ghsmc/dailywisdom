@@ -1,5 +1,5 @@
 body {
-    background-color: salmon;
+    background-color: lightskyblue;
     color: white;
     font-size: xx-large;
     max-width: 40rem;
@@ -21,8 +21,8 @@ body {
     border: none;
     font-size: large;
     background-color: white;
-    color: salmon;
-    border-color: salmon;
+    color: lightskyblue;
+    border-color: lightskyblue;
     font-weight: bold;
 }
 
