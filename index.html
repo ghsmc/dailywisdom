@@ -33,15 +33,17 @@
 
         //randomizing the color
         function random_bg_color() {
+            let bgColor = "salmon";
             var x = Math.floor(Math.random() * 3 + 1);
+
             if (x == 1) {
-                bgColor = "rgb" + "(66, 104, 152)";
+                bgColor = "rgb(66, 104, 152)";
             }
             if (x == 2) {
-                bgColor = "rgb" + "(250, 128, 144)";
+                bgColor = "rgb(250, 128, 144)";
             }
             if (x == 3) {
-                bgColor = "rgb" + "(94, 189, 159)";
+                bgColor = "rgb(94, 189, 159)";
             }
             document.body.style.backgroundColor = bgColor;
             document.getElementById("wisdom-button").style.color = bgColor;
