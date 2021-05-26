@@ -23,11 +23,11 @@
     <script>
         //randomizing the quote
         async function getQuote() {
-            let data = await fetch('https://api.quotable.io/random');
+            let data = await fetch('https://zenquotes.io/api/random');
             let quote = await data.json();
             console.log(quote);
-            document.getElementById("quotation").innerText = quote.content;
-            document.getElementById("author").innerText = "- " + quote.author;
+            document.getElementById("quotation").innerText = q;
+            document.getElementById("author").innerText = "- " + a;
         }
         getQuote();
 
