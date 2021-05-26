@@ -24,6 +24,7 @@ body {
     color: lightskyblue;
     border-color: lightskyblue;
     font-weight: bold;
+    position: absolute;
 }
 
 .btn:hover {
